@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating01" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating02" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating03" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating04" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating05" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating06" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating07" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating08" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating09" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating10" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating11" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating12" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating13" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating14" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating15" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating16" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating17" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating18" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating19" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating20" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating21" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating22" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating23" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating24" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating25" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating26" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating27" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating28" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating29" />
+    <item android:duration="40" android:drawable="@drawable/animation_goldbeating30" />
+    <item android:duration="2040" android:drawable="@drawable/animation_goldbeating31" />
+</animation-list>

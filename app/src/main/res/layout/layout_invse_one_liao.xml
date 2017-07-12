@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/btn_long_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dip"
+    android:layout_alignParentBottom="true"
+    android:background="#fffafafa">
+        <com.hebao.app.view.OneClickButton
+            android:id="@id/btn_long"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_red_bg_selector"
+            android:duplicateParentState="false"
+            android:text="@null"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip" />
+
+        <ImageView
+            android:id="@id/touzi_img_calculator"
+            android:layout_width="55.0dip"
+            android:layout_height="55.0dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_selector_ff8f5e_f9753c"
+            android:duplicateParentState="false"
+            android:scaleType="center"
+            android:layout_alignLeft="@id/btn_long"
+            android:src="@drawable/touzi_img_calculator"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/common_gray_dd"
+            android:visibility="visible" />
+
+</RelativeLayout>

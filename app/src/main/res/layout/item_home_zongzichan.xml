@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/common_gray_dd" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="#ffefefef"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btn_zijin_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="1.0px"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_selector_fafafa_f5f5f5"
+            android:text="提现"
+            android:textColor="@color/common_orange_m"
+            android:textSize="18.0dip" />
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="55.0dip"
+            android:background="@color/common_gray_dd" />
+
+        <Button
+            android:id="@id/btn_zijin_chongzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_selector_fafafa_f5f5f5"
+            android:text="充值"
+            android:textColor="@color/common_orange_m"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/common_gray_dd" />
+</LinearLayout>

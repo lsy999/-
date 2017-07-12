@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="2.0dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/circle_fff3e1_ffedd1_check"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip">
+
+            <RelativeLayout
+                android:id="@id/just_used_to_locate_01"
+                android:layout_width="fill_parent"
+                android:layout_height="68.0dip"
+                android:background="@color/transparent">
+
+                <ImageView
+                    android:id="@id/img_missionIcon"
+                    android:layout_width="46.0dip"
+                    android:layout_height="46.0dip"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/infor_img_rw0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/just_used_to_locate_04"
+                    android:layout_toRightOf="@id/img_missionIcon"
+                    android:orientation="vertical"
+                    android:paddingLeft="8.0dip">
+
+                    <TextView
+                        android:id="@id/text_missionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7.0dip"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="首次绑卡成功"
+                        android:textColor="@color/text_black_w"
+                        android:textSize="13.0sp" />
+
+                    <TextView
+                        android:id="@id/text_missionHint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="成功值+2 体验金+288"
+                        android:textColor="@color/text_a59f96"
+                        android:textSize="12.0sp"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@id/just_used_to_locate_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:background="@color/transparent">
+
+                    <Button
+                        android:id="@id/btn_missionUsable"
+                        android:layout_width="72.0dip"
+                        android:layout_height="36.0dip"
+                        android:background="@drawable/info_btn_red"
+                        android:gravity="center"
+                        android:paddingBottom="1.0dip"
+                        android:text="未完成"
+                        android:textColor="@color/text_white_w"
+                        android:textSize="14.0sp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

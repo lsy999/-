@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light01" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light02" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light03" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light04" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light05" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light06" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light05" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light04" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light03" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_light02" />
+</animation-list>

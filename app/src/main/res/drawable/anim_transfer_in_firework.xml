@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/fireworks_01" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_02" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_03" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_04" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_05" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_06" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_07" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_08" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_09" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_10" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_11" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_12" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_13" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_14" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_16" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_17" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_18" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_19" />
+    <item android:duration="40" android:drawable="@drawable/fireworks_20" />
+</animation-list>

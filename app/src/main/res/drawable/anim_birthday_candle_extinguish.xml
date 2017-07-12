@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish00" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish01" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish02" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish03" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish04" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish05" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish06" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish07" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish08" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish09" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish10" />
+    <item android:duration="40" android:drawable="@drawable/birth_animation_extinguish11" />
+</animation-list>

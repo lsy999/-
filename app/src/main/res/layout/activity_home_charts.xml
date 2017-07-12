@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_titleheight"
+        android:background="@color/bar_orange"
+        >
+        <ImageView
+            android:id="@+id/img_topback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/navig_img_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="每日收益"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tool_titletextsize"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/bar_orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="28sp"
+            android:text="0.00"
+            android:id="@+id/tv_shouru_pro"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/Rl_home_charts"
+            android:layout_width="match_parent"
+            android:background="@color/bar_orange"
+            android:layout_height="@dimen/btn_width_cir_m"
+            android:layout_marginTop="10dp"
+            >
+
+            <lib.view.charts.ColumnChartView
+                android:id="@+id/columnchart"
+                android:layout_width="700dp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/activity_funds_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="28.0dip">
+
+        <RelativeLayout
+            android:id="@id/just_used_to_locate_03"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@id/tv_pocketRegular_layout"
+            android:background="@color/common_white_bg"
+            android:paddingLeft="17.0dip">
+
+            <ImageView
+                android:id="@id/just_used_to_locate_01"
+                android:layout_width="9.0dip"
+                android:layout_height="9.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/safe_img_cirred" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/just_used_to_locate_01"
+                android:text="项目投资"
+                android:textColor="@color/text_black_w"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@id/tv_EstimateIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17.0dip"
+                android:text="0.00"
+                android:textColor="@color/text_red_w"
+                android:textSize="16.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/just_used_to_locate_01"
+                android:background="@color/common_gray_dd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/tv_pocketRegular_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@id/just_used_to_locate_02"
+            android:background="@color/common_white_bg"
+            android:paddingLeft="17.0dip">
+
+            <ImageView
+                android:id="@id/just_used_to_locate_01"
+                android:layout_width="9.0dip"
+                android:layout_height="9.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/safe_img_ciryellow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/just_used_to_locate_01"
+                android:text="零钱包"
+                android:textColor="@color/text_black_w"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@id/tv_pocketMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17.0dip"
+                android:text="0.00"
+                android:textColor="@color/text_red_w"
+                android:textSize="16.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/just_used_to_locate_01"
+                android:background="@color/common_gray_dd" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/just_used_to_locate_02"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@color/common_white_bg"
+            android:paddingLeft="17.0dip">
+            <ImageView
+                android:id="@id/just_used_to_locate_01"
+                android:layout_width="9.0dip"
+                android:layout_height="9.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:src="@drawable/safe_img_cirgreen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/just_used_to_locate_01"
+                android:text="活动奖励"
+                android:textColor="@color/text_black_w"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@id/tv_Available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17.0dip"
+                android:text="0.00"
+                android:textColor="@color/text_red_w"
+                android:textSize="16.0dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/just_used_to_locate_01"
+                android:background="@color/common_gray_dd" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="23.0dip"
+        android:background="@color/common_white_bg" />
+
+</LinearLayout>

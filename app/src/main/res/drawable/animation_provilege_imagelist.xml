@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_01" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_02" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_03" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_04" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_05" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_06" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_07" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_08" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_09" />
+    <item android:duration="40" android:drawable="@drawable/animation_fireworks_10" />
+    <item android:duration="40" android:drawable="@color/transparent" />
+</animation-list>

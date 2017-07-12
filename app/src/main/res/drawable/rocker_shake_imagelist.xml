@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker01" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker02" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker03" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker04" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker05" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker06" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker07" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker08" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker09" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker10" />
+    <item android:duration="40" android:drawable="@drawable/me_animation_rocker11" />
+</animation-list>

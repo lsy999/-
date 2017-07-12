@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_gray_bg">
+
+    <include
+        android:id="@id/just_used_to_locate_01"
+        layout="@layout/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/just_used_to_locate_01"
+        android:layout_marginTop="16.0dip"
+        android:background="@color/common_white_bg"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/common_gray_dd" />
+
+        <RelativeLayout
+            android:id="@+id/rl_xinxi_xiugai"
+            android:layout_width="fill_parent"
+            android:layout_height="92.0dip"
+            android:background="@drawable/click_white_gray">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:text="头像"
+                android:textColor="@color/text_black_w"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@id/just_used_to_locate_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="16.0dip"
+                android:src="@drawable/common_btn_vector" />
+
+            <ImageView
+                android:id="@+id/img_clIm_xinxin_xiugai"
+                android:layout_width="74.0dip"
+                android:layout_height="74.0dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/just_used_to_locate_02"
+                android:scaleType="fitXY"
+                android:src="@drawable/common_img_user" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="16.0dip"
+            android:background="@color/common_gray_dd" />
+
+        <RelativeLayout
+            android:id="@id/activity_update_nickName_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/tab_me">
+
+            <TextView
+                android:id="@id/just_used_to_locate_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:text="昵称"
+                android:textColor="@color/text_black_w"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@id/edit_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/just_used_to_locate_03"
+                android:gravity="center|right"
+                android:maxLength="16"
+                android:text="荷小包"
+                android:paddingRight="35.0dip"
+                android:singleLine="true"
+                android:textColor="@color/text_gray_w_a5"
+                android:textColorHint="@color/text_gray_w_d"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16.0dip"
+                android:src="@drawable/common_btn_vector" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/common_gray_dd" />
+    </LinearLayout>
+
+   </RelativeLayout>

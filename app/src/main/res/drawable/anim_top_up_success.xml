@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess01" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess02" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess03" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess04" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess05" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess06" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess07" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess08" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess09" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess10" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess11" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess12" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess13" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess14" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess15" />
+    <item android:duration="40" android:drawable="@drawable/purse_animation_tosuccess16" />
+    <item android:duration="400" android:drawable="@drawable/purse_animation_tosuccess17" />
+</animation-list>

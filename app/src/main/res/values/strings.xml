@@ -1,0 +1,364 @@
+<resources>
+    <string name="app_name">HeBao</string>
+    //BaseMainFragment
+    <string name="press_again_exit">再按一次退出</string>
+
+    //刷新
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    //荷包
+    <string name="bindCreditCountIsMax">已超过六次绑卡上限，请联系客服解除绑定限制</string>
+    <string name="bind_bank">绑定储蓄卡</string>
+    <string name="bind_bank_card_error_hint2">"这个证件号已被荷包用户绑定了。
+心塞！我要找客服！"</string>
+    <string name="bind_bank_card_idres_error_hint">&lt;font color=#f95c06>此证件号已被荷包用户绑定。&lt;br/>如有疑问，请联系客服 400 830 1068&lt;br/>(工作日9：00 - 23：00)&lt;/font></string>
+    <string name="bind_bank_card_res_error_hint">&lt;font color=#f95c06>该储蓄卡已被荷包用户绑定。&lt;br/>如有疑问，请联系客服 400 830 1068&lt;br/>(工作日9：00 - 23：00)&lt;/font></string>
+    <string name="bindbankcard_change_openaccount_hint">&lt;font color=#ffad2c>温馨提示：&lt;/font>准确的开户行信息，将加快提现的到账速度。</string>
+    <string name="bindbankcard_details_bottom_tip">准确的开户行信息，将会加快提现的到账速度</string>
+    <string name="bindbankcard_error_checktime_hint">"你绑卡的次数已达到上限，上传证件
+照由荷包工作人员帮你解决吧！"</string>
+    <string name="bindbankcard_success_hint">&lt;font color=#a5a5a5>恭喜你！储蓄卡绑定成功！&lt;/font></string>
+    <string name="cancelReserveTipHint">还款预约取消后，资金将继续留在%s生息，请记得及时通过其他方式还款。</string>
+    <string name="catalyst_copy_button">Copy</string>
+    <string name="catalyst_debugjs">Debug JS Remotely</string>
+    <string name="catalyst_debugjs_off">Stop Remote JS Debugging</string>
+    <string name="catalyst_dismiss_button">"Dismiss
+(ESC)"</string>
+    <string name="catalyst_element_inspector">Toggle Inspector</string>
+    <string name="catalyst_heap_capture">Capture Heap</string>
+    <string name="catalyst_hot_module_replacement">Enable Hot Reloading</string>
+    <string name="catalyst_hot_module_replacement_off">Disable Hot Reloading</string>
+    <string name="catalyst_jsload_error">Unable to download JS bundle. Did you forget to start the development server or connect your device?</string>
+    <string name="catalyst_jsload_message">Fetching JS bundle</string>
+    <string name="catalyst_jsload_title">Please wait…</string>
+    <string name="catalyst_live_reload">Enable Live Reload</string>
+    <string name="catalyst_live_reload_off">Disable Live Reload</string>
+    <string name="catalyst_perf_monitor">Show Perf Monitor</string>
+    <string name="catalyst_perf_monitor_off">Hide Perf Monitor</string>
+    <string name="catalyst_poke_sampling_profiler">Start/Stop Sampling Profiler</string>
+    <string name="catalyst_reload_button">"Reload
+(R, R)"</string>
+    <string name="catalyst_reloadjs">Reload</string>
+    <string name="catalyst_remotedbg_error">Unable to connect with remote debugger</string>
+    <string name="catalyst_remotedbg_message">Connecting to remote debugger</string>
+    <string name="catalyst_report_button">Report</string>
+    <string name="catalyst_settings">Dev Settings</string>
+    <string name="catalyst_settings_title">Catalyst Dev Settings</string>
+    <string name="changeLoginPhoneStatusContactText">想知道审核进度？&lt;font color=#FFAD2C>联系客服&lt;/font></string>
+    <string name="changeLoginPhoneStatusText">"提交成功！1-2个工作日完成审核
+，请耐心等待。审核通过后，通知
+将发送到你新的登录手机号码。届
+时，你可以用新的手机号码登录荷包。"</string>
+    <string name="changeLoginPhoneStatusText2">"信息提交成功！
+1-2个工作日完成审核，请耐心等待。审核通过的结果将以短信形式发送至你新的登录手机号码。届时，你就可以用新号码登录荷包，旧号码失效。"</string>
+    <string name="changeLoginPhoneStatusVerifyingText">"信息正在审核中，请耐心等待。审核
+通过后，通知将发送到您新的登录手
+机号码。届时，您可以用新号码登录
+荷包。"</string>
+    <string name="changebank_dialog_tohundred_tip">为保障资金安全，荷包账户遵循同卡进出原则，总资产满100元的用户如需换卡，需要提交相关身份验证材料，是否继续更换储蓄卡？</string>
+    <string name="changebank_dialog_tothree_tip">由于你尝试换卡次数过多，本次更换储蓄卡需要提交相关身份验证材料，是否继续更换储蓄卡</string>
+    <string name="changebank_downloaddeclare_hint">(点击下载声明书)</string>
+    <string name="changebank_uploadphoto_step1">手持本人身份证和需要绑定的储蓄卡，按示例图片拍摄。</string>
+    <string name="changebank_uploadphoto_step2">手持目前已绑定的储蓄卡与你需要绑定的储蓄卡照片（如旧卡遗失请提交银行注销证明文件）</string>
+    <string name="changebank_uploadphoto_step3">手持本人身份证背面和储蓄卡更换声明的照片</string>
+    <string name="changebank_verifying_tip">"荷包正在审核储蓄卡信息，暂不支
+持充值、投资和提现。请耐心等待
+审核结果！"</string>
+    <string name="changebankcard_success_hint">&lt;font color=#a5a5a5>恭喜你！储蓄卡更换成功！&lt;/font></string>
+    <string name="changebankcard_verifying_hint">"你有一张储蓄卡正在审核中，
+审核结束后才可更换登录手机号"</string>
+    <string name="changeloginphone_verifying_hint">"你的登录手机号正在审核中，
+审核结束后才可更换储蓄卡"</string>
+    <string name="changephone_subverifying_hint">"信息提交成功！
+1-2个工作日完成审核，请耐心等待。"</string>
+    <string name="changephone_toptip">"你现在使用的手机号码是：%s
+更换号码后，下次登录需要使用新手机号码"</string>
+    <string name="changephone_uploadphoto_step1">手持本人身份证和已绑定储蓄卡，按示例图片拍摄。</string>
+    <string name="changephone_uploadphoto_step2">提供本人手写的《声明》，且将《声明》、储蓄卡、身份证放在一起拍照，无需手持</string>
+    <string name="changephone_verifying_hint">荷包正在审核你的身份信息，审核通过&lt;br/>后请使用更换后的手机号%s&lt;br/>登录荷包。</string>
+    <string name="checkLoginDeviceContactText">无法接收验证码？</string>
+    <string name="checksms_bindbank_hint1">绑定储蓄卡需要验证你的身份</string>
+    <string name="checksms_bindbank_hint2">验证码将发送到%s</string>
+    <string name="checksms_changebank_hint1">更换储蓄卡需要验证你的身份</string>
+    <string name="checksms_changebank_hint2">验证码已发送到%s</string>
+    <string name="chongzhi_fail_hint1">"亲，你的充值貌似没有成功!
+荷小包建议你~"</string>
+    <string name="chongzhi_info_hint1">1.本次充值送体验金活动有%s档,每档仅限首次充值成功后获赠；</string>
+    <string name="chongzhi_info_hint3">2.赠送体验金可在体验金流水中查看；</string>
+    <string name="chongzhi_item_hint" formatted="false">成长值 +%s 体验金 +%s</string>
+    <string name="chongzhi_item_title">首次充值%s元</string>
+    <string name="chongzhi_nosupport_hint">"因为充值通道的变更，你的储蓄卡
+暂不支持充值"</string>
+    <string name="continuedSignUnusedHint">"你还没有转入过收益
+首次转入送2点成长值，每天坚持有奖励"</string>
+    <string name="creditCardSettlementHint">"系统结算中
+请结算结束后操作"</string>
+    <string name="deleteCreditHaveRecordText">"请待还款结束或取消还款后
+再删除该信用卡"</string>
+    <string name="deleteCreditNoRecordText">删除本张信用卡，将同时删除该卡的还款记录，且不能通过荷包对该卡进行还款（如要还款，则需再次绑定）。是否继续？</string>
+    <string name="dropdown_refresh_hint_normal">下拉更新</string>
+    <string name="empty_myinvest_noend_list">暂无投资结束项目</string>
+    <string name="empty_myinvest_noinvest_list">暂无投资</string>
+    <string name="empty_myinvest_turnouted_list">暂无已转出项目</string>
+    <string name="empty_purse_regular_noend_list">暂无投资结束项目</string>
+    <string name="empty_purse_regular_noinvest_list">"转入当天开始产生收益，
+收益明日到账"</string>
+    <string name="empty_purse_regular_turnout_list">暂无可转出项目</string>
+    <string name="empty_purse_regular_turnouted_list">暂无已转出项目</string>
+    <string name="experience_extract_button">抽取幸运数字</string>
+    <string name="experience_extracted_button">领取体验金</string>
+    <string name="experience_extracting_button">祝你好运</string>
+    <string name="experience_formula_string">体验金=累计成长值x幸运数字</string>
+    <string name="experience_invested">在投体验金(元)</string>
+    <string name="experience_share_text1">1.只要你分享就得5000元体验金</string>
+    <string name="experience_share_text2">2.好友成功注册,也可获得5000元体验金奖励</string>
+    <string name="fixedTransferInExplainTipText">同意荷包为你自动匹配优质债权及《荷包金融投资服务协议》</string>
+    <string name="fixeddeposit_full_tip">土豪，零钱包定期暂时单人限额%s万元，你可以投资其他项目。</string>
+    <string name="forget_gesture_code">忘记手势密码</string>
+    <string name="fragment_me_bindcard">我的银行卡</string>
+    <string name="game_result_count_amount_hint" formatted="false">本场送&lt;font color=#f95c06>%s&lt;/font>体验金，已有&lt;font color=#f95c06>%s&lt;/font>人抢到</string>
+    <string name="group_value_expired_text" formatted="false">"1.领取即可获得随机成长值
+2.有效期%s天，由于你截至%s仍未使用，该奖励已过期"</string>
+    <string name="group_value_text" formatted="false">"1.使用即可获得随机成长值
+2.有效期%s天，如%s仍未使用，随机成长值将过期，过期后将无法使用"</string>
+    <string name="grow_up_hint">恭喜你获得成长值&lt;font color=#f95c06>+%s&lt;/font></string>
+    <string name="guide_confirm_rollin_text">"最后点击\"确认转入\"开始
+赚钱吧！"</string>
+    <string name="guide_purse_invest_ok_hint">&lt;font color=#ffcc00>恭喜，你已转入成功！&lt;/font>&lt;br/>&lt;font color=#ffffff>15分钟内完成注册，明天即可&lt;br/>提现收益！&lt;/font></string>
+    <string name="guide_purse_invest_success_hint">&lt;font color=#ffcc00>恭喜，你已投资成功！&lt;/font>&lt;br/>&lt;font color=#ffffff>马上完成注册，明天即可&lt;br/>提现收益&lt;/font></string>
+    <string name="guide_purse_invest_tips">&lt;font color=#ffffff>恭喜你投资成功，明天就能领&lt;br/>取现金啦！&lt;/font></string>
+    <string name="guide_purse_rollin_hint">"现在将5000体验金转入零钱
+包，7天收益可每日提现！"</string>
+    <string name="guide_redpackage_hint1">"荷包送你一个体验金红包
+赶紧点击拆红包吧"</string>
+    <string name="guide_redpackage_hint2">"这里有5000元体验金红包
+点击即可领取！"</string>
+    <string name="guide_touzi_title_reg">注册领钱</string>
+    <string name="head_fresh_fail">网络连接有问题，请稍后再试</string>
+    <string name="home_available">可用余额</string>
+    <string name="homepage_asset_grand_income">累计收益(元)</string>
+    <string name="homepage_asset_none">暂无收益</string>
+    <string name="homepage_asset_thousand">0</string>
+    <string name="homepage_asset_yesterday_income">七天收益(元)</string>
+    <string name="homepage_asset_zero">0</string>
+    <string name="homepage_middle_context_btn_recharge">充值</string>
+    <string name="homepage_middle_context_btn_withdrawals">提现</string>
+    <string name="homepage_middle_context_title_newuser">有钱就是任性，登录吧~</string>
+    <string name="idcard_submit_success_hint2">"荷包正在审核储蓄卡信息，暂不支
+持充值、投资和提现。请耐心等待
+审核结果！"</string>
+    <string name="invest_btn_text">"同意协议
+马上投资"</string>
+    <string name="invest_fail_hint">&lt;font color=#F95C06>投资失败!&lt;/font></string>
+    <string name="invest_fail_hint2">已经被抢光了~</string>
+    <string name="invest_fail_hint3">"只剩%s元可投
+是否继续投资?"</string>
+    <string name="invest_incomecalculator_scope_text" formatted="false">项目投资金额(元): %s ~ %s</string>
+    <string name="invest_insure_goal_text" formatted="false">&lt;font color=#f95c06>可投%s&lt;/font>&lt;font color=#a5a5a5>/融资%s&lt;/font></string>
+    <string name="invest_item_deadline">锁定期</string>
+    <string name="invest_item_income">预期年化率</string>
+    <string name="invest_notify_hint">"1.该设置只对当天零钱包定期+有效；
+2.如收不到提醒，请在设备中的“设置—通知”中，允许荷包推送通知；
+3.设置提醒后，开抢前五分钟你会收到推送通知。"</string>
+    <string name="invest_success_hint">&lt;font color=#09BB07>投资成功!&lt;/font></string>
+    <string name="invest_turnout_hint">转出即视为你已放弃该项目的后续收益。此次投资的实际年化收益率将为%s &lt;font color=#ffad2c>详情>>&lt;/font></string>
+    <string name="kefu">"客服热线:
+%s"</string>
+    <string name="kfChangeCardResultBlackStyle" formatted="false">%s&lt;font color=#000000>%s&lt;/font></string>
+    <string name="kfChangeCardResultRedStyle" formatted="false">%s&lt;font color=#F95C06>%s&lt;/font></string>
+    <string name="listen_noPhone_toast">请接听语音验证码电话</string>
+    <string name="listen_phone_toast">请接听语音验证码电话</string>
+    <string name="login_error_msg">账号或密码错误,请重新输入</string>
+    <string name="login_error_msg_count">账号或密码错误,你还可输入&lt;font color=#F95C06>%s&lt;/font>次</string>
+    <string name="login_error_msg_locked">"登录密码错误,已被锁定%s。
+建议你找回密码"</string>
+    <string name="login_text">登录</string>
+    <string name="loginagin" formatted="false">你的荷包账号于 %s在%s上登录，如非本人操作，则密码可能已泄露，请重新登录后立即修改登录密码。</string>
+    <string name="maliciousUser_hint">由于你的账号存在异常，暂不支持该操作。为保障你的资金安全，请通过上传照片进行身份认证。</string>
+    <string name="me_bind_bank_card_hint1">请填写开户支行名称</string>
+    <string name="me_bind_bank_card_hint3">&lt;font color=#ffad2c>提醒：&lt;/font> &lt;font color=#a5a5a5>如需换卡，只能更换成该持卡人的另一张储蓄卡。&lt;/font></string>
+    <string name="me_bind_bank_card_item2">开户行所在地</string>
+    <string name="me_bind_bank_card_item3">开户支行</string>
+    <string name="me_bind_bank_card_item_user_name">持卡人</string>
+    <string name="me_bind_bank_card_titlehint">请绑定本人的储蓄卡，目前仅支持绑定一张卡</string>
+    <string name="me_bind_bank_card_titlehint2">更换成功后，仅能使用新卡充值、提现。</string>
+    <string name="me_security_auth_bypwd">通过登录密码验证</string>
+    <string name="me_security_auth_bysms">通过手机短信验证</string>
+    <string name="me_security_auth_text">请根据自身情况选择以下任一种方式进行验证：</string>
+    <string name="my_address_tip">如需修改收货地址，请通过用户反馈联系客服，客服核实你的身份信息后即可修改。</string>
+    <string name="net_error_no_data">"数据加载失败
+网络或服务器延迟，请稍后再试"</string>
+    <string name="net_ok_no_data">暂无记录</string>
+    <string name="net_ok_trading_no_data">最近三个月没有流水记录</string>
+    <string name="nonet_tips">有钱没网收，感觉心好累。</string>
+    <string name="nonet_tips2">检查设置</string>
+    <string name="notify_setting_tip_hint">"想要及时收到%s
+可在“设置”-“通知”-“荷包”中开启通知"</string>
+    <string name="openReserveRepaymentHint">(最近需要还信用卡？)</string>
+    <string name="paypwd_error_msg">支付密码错误,请重新输入</string>
+    <string name="paypwd_error_msg_count">支付密码错误,你还可输入&lt;font color=#F95C06>%s&lt;/font>次</string>
+    <string name="paypwd_error_msg_locked">"支付密码已被锁定%s，
+建议你找回密码"</string>
+    <string name="permissionCameraHint1">“荷包”想访问你的相机，仅用于上传图片到荷包。</string>
+    <string name="permissionCameraHint2">“荷包”想访问你的相机，仅用于上传图片到荷包。请前往系统设置中允许。</string>
+    <string name="permissionCameraHint3">“荷包”想读取你的本地文件，仅用于上传图片到荷包。</string>
+    <string name="permissionCameraHint4">“荷包”想读取你的本地文件，仅用于上传图片到荷包。请前往系统设置中允许。</string>
+    <string name="permissionFileHint1">为了让你正常地使用“荷包”，请允许“荷包”读写你的本地文件。</string>
+    <string name="permissionFileHint2">为了让你正常地使用“荷包”，请允许“荷包”读写你的本地文件。请前往系统设置中允许。</string>
+    <string name="permissionFileHint3">“荷包”想读写你的本地文件，仅用于下载协议。</string>
+    <string name="permissionFileHint4">“荷包”想读写你的本地文件，仅用于下载协议。请前往系统设置中允许。</string>
+    <string name="permissionGPSHint1">“荷包”想读取你的定位，仅用于为你提供更好的服务。</string>
+    <string name="permissionGPSHint2">“荷包”想读取你的定位，仅用于为你提供更好的服务。请前往系统设置中允许。</string>
+    <string name="permissionMicHint1">“荷包”想访问你的麦克风，仅用于让你更好地体验生日特权。</string>
+    <string name="permissionMicHint2">“荷包”想访问你的麦克风，仅用于让你更好地体验生日特权。请前往系统设置中允许。</string>
+    <string name="permissionSNSHint1">“荷包”想访问你的短信，仅用于自动帮你填写验证码。</string>
+    <string name="permissionSNSHint2">“荷包”想访问你的短信，仅用于自动帮你填写验证码。请前往系统设置中允许。</string>
+    <string name="pocketLimitProgressText" formatted="false">%s/&lt;font color=#FFFFFF>%s&lt;/font></string>
+    <string name="pocket_all_full_tip">土豪，你已达到%s万，感谢你的信任，继续让你的荷包鼓起来吧！</string>
+    <string name="pocket_anyTransferIn_full_tip">今日优先转入用户太多，额度已满，你可以明日再来使用优先转入特权或者等待零钱包开放转入。</string>
+    <string name="pocket_full_tip">你的零钱包已达到自由转入额度%s元，请等待零钱包页面开放转入再试。</string>
+    <string name="pocket_invest_detail_hint">"1、用户转入零钱包的资金将分散投资到零钱包资产组合中；
+2、系统将每日确认投资份额并结算投资收益。"</string>
+    <string name="pocket_invest_detail_hint1">由于项目数量增速较快，分散投资的项目将不再处理借款人隐私信息图片。</string>
+    <string name="pocket_invest_detail_hint2">"一、用户资金流转完全通过第三方支付机构，荷包不触及用户交易资金；
+
+ 二、用户资金同卡进出，确保资金安全；
+
+ 三、荷包多重保障计划：所有投资者转入的资金均自动加入荷包多重保障计划，一旦出现逾期或坏账，荷包将通过风险预备金进行全额垫付，保证投资者的资金安全；
+
+ 四、民生银行千万级风险预备金：为保障你的投资权益，荷包金融于民生银行开设千万级风险预备金专设账户，账户资金由民生银行专户管理。"</string>
+    <string name="pocket_invest_detail_hint3">荷包金融联手嘉得信律师事务所，对荷包金融融资项目及模式进行专业评估，确保平台所有产品合法合规，保障投资者合法权益。</string>
+    <string name="pocket_overrun_tip">今天转入次数已用完，请等待下一次零钱包页面开放转入再试</string>
+    <string name="pocket_regular">零钱包定期</string>
+    <string name="privilege_14grade_max_hint">今日优先转入用户太多，额度已满，你可以明日再来使用优先转入特权或者等待零钱包开放转入。</string>
+    <string name="project_hk_date">还款开始日期：</string>
+    <string name="project_hk_date_text">项目满标的第二天</string>
+    <string name="project_jihua">还款方式：</string>
+    <string name="project_qici">还款期次：</string>
+    <string name="project_rongzi">融资方：</string>
+    <string name="prompt_title">提示</string>
+    <string name="prompt_title_cancel">取消</string>
+    <string name="prompt_title_ok">确定</string>
+    <string name="purse_invest_record_none_hint">&lt;font color=#ffad2c>温馨提示：&lt;/font>&lt;br/>转入金额满100元才会产生收益；&lt;br/>当日转入，次日可查看投资明细。</string>
+    <string name="purse_limit_hint">你的零钱包已达限额</string>
+    <string name="purse_limit_more_hint">已达限额，剩余金额已转到可用余额</string>
+    <string name="purse_noincome_tip">零钱不足100，暂无收益</string>
+    <string name="purse_none_tip1">注册资金一亿元</string>
+    <string name="purse_none_tip3">民生银行千万级风险预备金专设账户</string>
+    <string name="purse_none_tip4">由嘉得信律师事务所提供法律支持</string>
+    <string name="purse_panicbuy_limit">额度已满，本次充值剩余的%s元已转至你的账户余额。</string>
+    <string name="purse_regular_endop_hint">选择“本金自动复投”，即项目到期后本金自动投资到下一个项目中，选择“本金回到余额”，即项目到期后本金回到可用余额中。</string>
+    <string name="purse_regular_turnout_hint">转出即视为你已放弃收益，这笔投资的盈亏将为0元。</string>
+    <string name="purse_regular_turnout_hint2">成功到账后，我们会及时通知你。资金将转入可用余额。</string>
+    <string name="question_mark">\?</string>
+    <string name="rechargeFestivalStyleAmount" formatted="false">"充值%s，狂送%s体验金
+"</string>
+    <string name="rechargeFestivalStyleExplainText1">1.本次充值送体验金活动有%s档，每档仅限首次充值成功后获赠</string>
+    <string name="rechargeFestivalStyleExplainText2">2.春节活动期间，新用户首次充值奖励加倍:</string>
+    <string name="rechargeFestivalStyleExplainText3">3.赠送体验金可在体验金流水中查看</string>
+    <string name="recharge_backtimeout_hint">"充值申请提交成功，预计5分钟内到账
+处理结果可在首页刷新查看"</string>
+    <string name="record_available_tiyanjin">可用体验金(元)</string>
+    <string name="reg_text">注册</string>
+    <string name="register_flowing_tip1">手机号码将成为你的账号</string>
+    <string name="register_flowing_tip2">输入你收到的验证码</string>
+    <string name="register_flowing_tip3">设置你的荷包密码</string>
+    <string name="register_flowing_tipfinish">"恭喜你注册成功！
+为了你的账户安全，建议设置手势密码"</string>
+    <string name="register_flowing_tipfinish3">"恭喜你注册成功！
+赶紧去零钱包投资吧，收益明日到账"</string>
+    <string name="register_flowing_tipfinish4">"恭喜你注册成功！
+且你已成功投资零钱包，收益明日到账"</string>
+    <string name="register_flowing_tipfinish5">"恭喜你注册成功！
+赶紧去领5000元体验金投资赚收益吧"</string>
+    <string name="register_folwing_hint">点击“下一步”，即表示你同意</string>
+    <string name="regular_limit_hint">你的零钱包定期已达限额</string>
+    <string name="remind_income">收益提醒</string>
+    <string name="remind_newbid">新标提醒</string>
+    <string name="remind_robbid">抢标提醒</string>
+    <string name="remind_robbid_hint">关闭后，新标开抢前将无法收到推送提醒</string>
+    <string name="reset_gesture_code">重新设置</string>
+    <string name="routeHint1">你所使用的储蓄卡暂不支持多通道</string>
+    <string name="routeHint2">请重新选择一个充值通道</string>
+    <string name="select_bank">选择银行</string>
+    <string name="select_bank_layout_hint">支付额度会根据银行规定适时调整，仅供参考</string>
+    <string name="server_phone">如有疑问请联系客服：&lt;font color=#ffad2c>400-830-1068&lt;/font></string>
+    <string name="set_gesture_pattern">绘制解锁图案</string>
+    <string name="set_pay_password_hint1">请输入新的支付密码</string>
+    <string name="set_pay_password_hint2">请再次输入新的支付密码</string>
+    <string name="set_pay_password_hint3">荷包支付密码已生效</string>
+    <string name="set_pay_password_hint4">请设置你的支付密码</string>
+    <string name="set_pay_password_hint5">请再次输入你的支付密码</string>
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="share_content">我刚刚在荷包免费领了5000块，爽呆……</string>
+    <string name="share_first_btn">分享即可领取</string>
+    <string name="share_first_cj">你已完成首次充值投资</string>
+    <string name="share_first_purse_addinterest_title" formatted="false">利率从%s上涨到%s</string>
+    <string name="share_first_purse_hint">恭喜你!&lt;br/>你已完成单次转入零钱包%s元。</string>
+    <string name="share_first_purse_regular_invest">"你已完成零钱包定期首次投资
+获得%s体验金"</string>
+    <string name="share_first_purse_tyj_title">恭喜你获得一个体验金红包！</string>
+    <string name="share_first_title">恭喜你获得一个利息红包！</string>
+    <string name="share_first_title2">首次充值投资还有红包等你拿噢！</string>
+    <string name="share_first_tyj">"你已完成首次体验金投资
+获得%s体验金"</string>
+    <string name="share_first_tyj_hint">首次充值投资还有一个，单笔投资越多红包越大！</string>
+    <string name="share_hint1">1.让朋友用手机扫描下面二维码即可安装：</string>
+    <string name="share_hint2">2.还可以通过以下几种方式分享给朋友：</string>
+    <string name="share_link">http://www.hebao.im/sns</string>
+    <string name="share_title">注册成功立即领钱</string>
+    <string name="sign_dialog_rank_hint">你是今天第&lt;font color=#F95C06>%s&lt;/font>位转入的用户</string>
+    <string name="string_color_f95c06_a5a5a5" formatted="false">&lt;font color=#f95c06>%s&lt;/font>&lt;font color=#a5a5a5>%s&lt;/font></string>
+    <string name="sys_settlement_hint">"系统正在结算中
+请在结算完成后再做资金操作"</string>
+    <string name="sys_settlement_hint2">"系统正在结算中
+结算完成后即可查看收益"</string>
+    <string name="sys_settlement_hint3">"由于投资人数增长较快，结算数据
+量加大，荷包每天0点将进行系统
+结算，预计5点左右结算完毕，请
+在结算完成后再做资金操作。"</string>
+    <string name="tiyanjin">体验金</string>
+    <string name="touchid_dialog_check_bottom_hint">开启指纹解锁将关闭手势密码功能</string>
+    <string name="touchid_dialog_check_button">立即开启</string>
+    <string name="touchid_dialog_check_hint">"检测到你的手机可以使用指纹解锁
+是否开启？"</string>
+    <string name="touchid_dialog_check_hint2">设置登录验证，能够让你的账户资金更安全哦！</string>
+    <string name="unAuthNoCodeHint">当前帐号尚未绑定储蓄卡，建议使用新手机号码直接注册，否则无法正常使用荷包帐号。是否使用新手机号码注册？（如有疑问，请联系荷包客服：400-830-1068）</string>
+    <string name="unboundbankcard_remind_hint">"为保障你的资金安全，请绑定储蓄卡
+之后再做账户操作。"</string>
+    <string name="unboundbankcard_remind_hint2">提供支付密码和短信验证双重保障</string>
+    <string name="uprate_expired_text" formatted="false">"1.加息天数:%s天
+2.限%s天内使用，由于你截至%s仍未使用，加息券已过期"</string>
+    <string name="uprate_uprateing_text" formatted="false">"1.加息天数:%s天
+2.加息时间:%s"</string>
+    <string name="uprate_use_text" formatted="false">"1.加息天数:%s天
+2.限%s天内使用，如%s仍未使用，加息券将过期，过期后将无法使用"</string>
+    <string name="uprate_used_text" formatted="false">"1.加息天数:%s天
+2.已使用，时间为:%s"</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="user_feedback_hint">你的荷包听你的！</string>
+    <string name="withdraw_confirm_hint1" formatted="false">"本月可免费提现%s次
+本次提现%s元
+实际到账%s元"</string>
+    <string name="withdraw_confirm_hint2" formatted="false">"提现金额%s元
+实际到账%s元
+手续费%s元"</string>
+    <string name="withdraw_lack_hint">"本次提现扣除手续费后实际到账
+金额为0元。我们建议您多挣一点再提现！"</string>
+    <string name="withdraw_lack_twenty_hint2">"亲，每笔提现第三方支付公司需
+要扣取%s元手续费，是否继续提现？"</string>
+    <string name="withdraw_lack_twenty_hint3">"亲，因每笔提现第三方支付公司需
+要扣取%s元手续费，我们建议您多挣一点再提现！"</string>
+    <string name="wo_gongneng9">分享荷包\u0009\u0009</string>
+    <string name="work_time">工作日 9:00-23:00</string>
+    <string name="zongzichan">总资产</string>
+</resources>

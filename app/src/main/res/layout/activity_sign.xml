@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/flowProgress_layout"
+        android:layout_width="276.0dip"
+        android:layout_height="38.0dip"
+        android:layout_marginTop="6.0dip">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/layout_registerFlowing"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/flowProgress_layout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@id/text_registerTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginTop="61.0dip"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="手机号码将成为你的账号"
+            android:textColor="@color/text_black_ws"
+            android:textSize="20.0dip" />
+
+        <LinearLayout
+            android:id="@id/regMove_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43.0dip"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/rl_editLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip">
+
+                <EditText
+                    android:id="@id/edit_registerAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:drawableLeft="@drawable/common_img_mobile_down"
+                    android:drawablePadding="11.0dip"
+                    android:hint="账号"
+                    android:inputType="numberSigned"
+                    android:textColor="@color/text_black_w"
+                    android:textColorHint="@color/text_gray_w_d"
+                    android:textSize="16.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+                <View
+                    android:id="@id/fast_find_id_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/common_gray_dd" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@id/circle_btnRegNext"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
+                android:layout_marginTop="34.0dip"
+                android:gravity="center"
+                android:text="下一步"
+                android:background="@drawable/btn_yellow_bgc_selector"
+                android:textColor="@color/text_white_w"
+                android:textSize="18.0dip" />
+
+            <LinearLayout
+                android:id="@id/layout_regHint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/text_flowinghint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22.0dip"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/register_folwing_hint"
+                    android:textColor="@color/text_gray_w_a5"
+                    android:textSize="13.0dip" />
+
+                <TextView
+                    android:id="@id/text_serviceAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22.0dip"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="《荷包服务协议》"
+                    android:textColor="@color/text_orange_w"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

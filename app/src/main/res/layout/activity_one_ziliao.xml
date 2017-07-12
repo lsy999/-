@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16.0dip">
+
+    <RelativeLayout
+        android:id="@id/fast_find_id_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_f5_c4"
+        android:padding="16.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/just_used_to_locate_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/pocket_invest_detail_hint1"
+            android:textColor="@color/text_gray_w_a5"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@id/fast_find_id_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/just_used_to_locate_01"
+            android:includeFontPadding="false"
+            android:text="我知道了"
+            android:textColor="@color/text_orange_w"
+            android:textSize="12.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:background="@drawable/border_for_c4"
+        android:padding="16.0dip">
+
+        <ImageView
+            android:id="@id/just_used_to_locate_01"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:src="@drawable/touzi_img_zjaq" />
+
+        <TextView
+            android:id="@id/just_used_to_locate_02"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@id/just_used_to_locate_01"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="资金安全"
+            android:textColor="@color/text_black_w"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/just_used_to_locate_02"
+            android:layout_marginTop="20.0dip"
+            android:includeFontPadding="false"
+            android:text="@string/pocket_invest_detail_hint2"
+            android:textColor="@color/text_black_w"
+            android:textSize="13.0dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:background="@drawable/border_for_c4"
+        android:padding="16.0dip">
+
+        <ImageView
+            android:id="@id/just_used_to_locate_01"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:src="@drawable/touzi_img_flzc" />
+
+        <TextView
+            android:id="@id/just_used_to_locate_02"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_toRightOf="@id/just_used_to_locate_01"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="法律支持"
+            android:textColor="@color/text_black_w"
+            android:textSize="16.0dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/just_used_to_locate_02"
+            android:layout_marginTop="20.0dip"
+            android:includeFontPadding="false"
+            android:text="@string/pocket_invest_detail_hint3"
+            android:textColor="@color/text_black_w"
+            android:textSize="13.0dip" />
+    </RelativeLayout>
+</LinearLayout>

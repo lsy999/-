@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bar_orange</item>
+        <item name="colorPrimaryDark">@color/bar_orange</item>
+        <item name="colorAccent">@color/bar_orange</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <style name="Toolbar_TextAppearance_White">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Toolbar_TextAppearance_Expanded">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.NoActionBar.SwipeBack">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="tab_appearance">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+    <declare-styleable name="MyChartView">
+        <attr name="leftColor" format="color"></attr>
+        <attr name="leftColorBottom" format="color"></attr>
+        <attr name="selectLeftColor" format="color"></attr>
+        <attr name="rightColor" format="color"></attr>
+        <attr name="rightColorBottom" format="color"></attr>
+        <attr name="selectRightColor" format="color"></attr>
+        <attr name="xyColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PolygonChart">
+        <attr name="textPadding" format="dimension"></attr>
+      <!--  <attr name="max_value" format="integer"></attr>-->
+        <attr name="side_num" format="integer"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="border_size" format="dimension"></attr>
+        <attr name="text_size" format="dimension"></attr>
+        <attr name="text_color" format="color"></attr>
+        <attr name="fill_color" format="color"></attr>
+    </declare-styleable>
+
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+</resources>

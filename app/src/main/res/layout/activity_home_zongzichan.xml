@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_white_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_titleheight"
+        android:background="@color/bar_orange"
+        >
+        <ImageView
+            android:id="@+id/img_topback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/navig_img_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="总资产"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tool_titletextsize"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="142.0dip"
+            android:background="@color/common_orange_m">
+
+            <TextView
+                android:id="@id/just_used_to_locate_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="37.0dip"
+                android:includeFontPadding="false"
+                android:text="总资产(元)"
+                android:textColor="@color/text_orange_ws"
+                android:textSize="13.0dip" />
+
+            <TextView
+                android:id="@id/tv_TotalAsset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/just_used_to_locate_03"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7.0dip"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textColor="@color/common_white_bg"
+                android:textSize="40.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/tv_amountProgress_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="17.0dip"
+            android:background="@color/common_white_bg">
+
+            <!-- <com.hebao.app.view.FundsManagerProgressView
+                android:id="@id/activity_funds_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/activity_funds_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="28.0dip">
+            <RelativeLayout
+                android:id="@id/tv_pocketRegular_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/just_used_to_locate_02"
+                android:background="@color/common_white_bg"
+                android:paddingLeft="17.0dip">
+
+                <ImageView
+                    android:id="@id/just_used_to_locate_01"
+                    android:layout_width="9.0dip"
+                    android:layout_height="9.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.0dip"
+                    android:src="#ff8561ea" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/just_used_to_locate_01"
+                    android:text="项目投资"
+                    android:textColor="@color/text_black_w"
+                    android:textSize="16.0dip" />
+
+                <TextView
+                    android:id="@id/tv_EstimateIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17.0dip"
+                    android:text="0.00"
+                    android:textColor="@color/text_red_w"
+                    android:textSize="16.0dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/just_used_to_locate_01"
+                    android:background="@color/common_gray_dd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/just_used_to_locate_02"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/just_used_to_locate_01"
+                android:background="@color/common_white_bg"
+                android:paddingLeft="17.0dip">
+
+                <ImageView
+                    android:id="@id/just_used_to_locate_01"
+                    android:layout_width="9.0dip"
+                    android:layout_height="9.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.0dip"
+                    android:src="#fff95c06" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/just_used_to_locate_01"
+                    android:text="零钱包"
+                    android:textColor="@color/text_black_w"
+                    android:textSize="16.0dip" />
+
+                <TextView
+                    android:id="@id/tv_pocketMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17.0dip"
+                    android:text="0.00"
+                    android:textColor="@color/text_red_w"
+                    android:textSize="16.0dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/just_used_to_locate_01"
+                    android:background="@color/common_gray_dd" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@id/just_used_to_locate_01"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@color/common_white_bg"
+                android:paddingLeft="17.0dip">
+
+                <ImageView
+                    android:id="@id/just_used_to_locate_01"
+                    android:layout_width="9.0dip"
+                    android:layout_height="9.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12.0dip"
+                    android:src="#ff7acf15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/just_used_to_locate_01"
+                    android:text="可用余额"
+                    android:textColor="@color/text_black_w"
+                    android:textSize="16.0dip" />
+
+                <TextView
+                    android:id="@id/tv_Available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17.0dip"
+                    android:text="0.00"
+                    android:textColor="@color/text_red_w"
+                    android:textSize="16.0dip" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/just_used_to_locate_01"
+                    android:background="@color/common_gray_dd" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <include
+            layout="@layout/item_home_zongzichan"/>
+    </LinearLayout>
+</LinearLayout>

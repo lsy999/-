@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_gray_bg"
+    android:clipChildren="false">
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+      app:titleTextAppearance="@style/Toolbar_TextAppearance_White"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+      <ImageView
+          android:layout_width="fill_parent"
+          android:layout_height="400.0dip"
+          android:background="@drawable/fragment_homepage_bg" />
+
+      <RelativeLayout
+          android:id="@+id/middle_context"
+          android:layout_width="fill_parent"
+          android:layout_height="217.0dip"
+          android:clipChildren="false"
+          android:visibility="visible"
+          android:layout_alignTop="@+id/fragment_main_user_head_layout"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="112.0dip">
+
+          <TextView
+              android:id="@+id/tv_home_username"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:includeFontPadding="false"
+              android:maxWidth="157.0dip"
+              android:singleLine="true"
+              android:text=""
+              android:textColor="#ffffffff"
+              android:textSize="14.0dip" />
+
+          <TextView
+              android:id="@+id/text_level"
+              android:layout_width="35.0dip"
+              android:layout_height="16.0dip"
+              android:layout_alignBaseline="@id/tv_home_username"
+              android:layout_marginLeft="5.0dip"
+              android:layout_toRightOf="@id/tv_home_username"
+              android:background="@drawable/circle_mred_bgc"
+              android:gravity="center"
+              android:singleLine="true"
+              android:text="Lv0"
+              android:textColor="@color/text_white_w"
+              android:textSize="12.0dip"
+              android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="72.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="17.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="18.0dip"
+            android:paddingRight="18.0dip">
+
+          <Button
+              android:id="@+id/btn_tixain"
+              android:layout_width="fill_parent"
+              android:layout_height="50.0dip"
+              android:layout_gravity="bottom"
+              android:layout_weight="1.0"
+              android:background="@drawable/btn_yellow_bg_selector"
+              android:text="@string/homepage_middle_context_btn_withdrawals"
+              android:textColor="@color/common_white_bg"
+              android:textSize="18.0dip" />
+
+          <View
+              android:layout_width="12.0dip"
+              android:layout_height="fill_parent"
+              android:background="@color/transparent" />
+
+          <RelativeLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/transparent"
+              android:layout_weight="1.0">
+
+            <Button
+                android:id="@+id/btn_chongzhi"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/main_btn_styj_selector"
+                android:gravity="center"
+                android:text="@string/homepage_middle_context_btn_recharge"
+                android:textColor="@color/common_white_bg"
+                android:textSize="18.0dip" />
+
+            <Button
+                android:id="@+id/btn_chongzhi_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_red_circlebg_selector"
+                android:gravity="center"
+                android:text="@string/homepage_middle_context_btn_recharge"
+                android:textColor="@color/common_white_bg"
+                android:textSize="18.0dip"
+                android:visibility="gone" />
+          </RelativeLayout>
+        </LinearLayout>
+      </RelativeLayout>
+      <RelativeLayout
+          android:background="@color/transparent"
+          android:layout_below="@+id/middle_context"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <include
+
+            layout="@layout/fragment_home_layout_liao"/>
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/page_title_layout"
+          android:layout_width="fill_parent"
+          android:layout_height="@dimen/topbar_max_height">
+      </RelativeLayout>
+
+      <FrameLayout
+          android:id="@id/fragment_main_user_head_layout"
+          android:layout_width="105.0dip"
+          android:layout_height="105.0dip"
+          android:layout_below="@id/page_title_layout"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="-25.0dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_main_user_head_img"
+            android:layout_width="105.0dip"
+            android:layout_height="105.0dip"
+            android:src="@drawable/common_img_user"
+            app:border_color="@color/common_white_bg"
+            app:border_width="2.0dip" />
+      </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

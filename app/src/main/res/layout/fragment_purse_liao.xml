@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@id/fragment_purse_notify_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/ffe6b1_nonet_tip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/fast_find_id_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/just_used_to_locate_04"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/nonet_tips"
+            android:textColor="@color/f95c06_orange_red"
+            android:textSize="14.0dip" />
+
+        <ImageView
+            android:id="@id/just_used_to_locate_03"
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16.0dip"
+            android:src="@drawable/touzi_img_tipsjt" />
+
+        <TextView
+            android:id="@id/just_used_to_locate_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6.0dip"
+            android:layout_toLeftOf="@id/just_used_to_locate_03"
+            android:text="@string/nonet_tips2"
+            android:textColor="@color/black"
+            android:textSize="14.0dip"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/ffca6f_nonet_tip" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/fragment_purse_notify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <!--   <com.hebao.app.view.SpringBackScrollView
+               android:id="@id/fragment_purse_scrollview"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_below="@id/fragment_purse_notify_layout"
+               android:fadingEdge="none"
+               android:fadingEdgeLength="0.0dip"
+               android:scrollbars="none">-->
+    </RelativeLayout>
+    <ScrollView
+        android:id="@id/fragment_purse_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fragment_purse_notify_layout"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@id/just_used_to_locate_01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="330.0dip"
+                    android:background="@color/bar_red"
+                    android:paddingBottom="23.0dip"
+                    android:visibility="visible">
+                    <lib.view.progressbar.ColorArcProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="220dip"
+                        android:id="@+id/barInterest"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        app:back_color="@android:color/darker_gray"
+                        app:back_width="8dp"
+                        app:current_value="66"
+                        app:front_color2="@color/common_gray_fa"
+                        app:front_color1="@color/common_gray_fa"
+                        app:front_color3="@color/common_orange_m"
+                        app:front_width="8dp"
+                        app:is_need_content="true"
+                        app:is_need_title="true"
+                        app:is_need_unit="true"
+                        app:max_value="100"
+                        app:string_title="年化收益(%)"
+                        app:string_unit=""/>
+                    <TextView
+                        android:id="@id/fragment_purse_ratehint"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/common_white_bg"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:id="@id/fragment_purse_ratemax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/fragment_purse_ratehint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="14.0dip"
+                        android:text="爆表啦!"
+                        android:textColor="#ffffcc00"
+                        android:textSize="16.0dip"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@id/just_used_to_locate_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80.0dip">
+
+                        <TextView
+                            android:id="@id/fragment_purse_current_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:maxHeight="58.0dip"
+                            android:textColor="@color/common_white_bg"
+                            android:textSize="55.0sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_current_ratecover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/fragment_purse_current_rate"
+                            android:layout_alignLeft="@id/fragment_purse_current_rate"
+                            android:layout_alignRight="@id/fragment_purse_current_rate"
+                            android:layout_alignTop="@id/fragment_purse_current_rate"
+                            android:layout_marginTop="-8.0dip"
+                            android:background="@drawable/purse_img_numcover"
+                            android:includeFontPadding="false"
+                            android:text="wiwiwi "
+                            android:textColor="@color/transparent"
+                            android:textSize="25.0dip"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+
+
+
+                    <!--    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/just_used_to_locate_01"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="-22.0dip"
+                            android:text="年化收益(%)"
+                            android:textColor="@color/common_white_bg"
+                            android:textSize="13.0dip" />-->
+
+                    <ImageView
+                        android:id="@id/fragment_purse_arrow2"
+                        android:layout_width="22.0dip"
+                        android:layout_height="19.0dip"
+                        android:layout_above="@id/fragment_purse_ratehint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="14.0dip"
+                        android:src="@drawable/purse_img_arrow2" />
+
+                    <ImageView
+                        android:id="@id/fragment_purse_arrow3"
+                        android:layout_width="22.0dip"
+                        android:layout_height="28.0dip"
+                        android:layout_above="@id/fragment_purse_ratehint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="14.0dip"
+                        android:src="@drawable/purse_img_arrow3"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@id/fragment_purse_arrow1"
+                        android:layout_width="22.0dip"
+                        android:layout_height="19.0dip"
+                        android:layout_above="@id/fragment_purse_arrow2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="-9.0dip"
+                        android:src="@drawable/purse_img_arrow1" />
+
+                    <View
+                        android:id="@id/fragment_purse_current_gift_rate_bg"
+                        android:layout_width="80.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_above="@id/fragment_purse_ratehint"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="14.0dip"
+                        android:background="@drawable/border_e74e1f_c10dp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@id/fragment_purse_current_gift_rate"
+                        android:layout_width="80.0dip"
+                        android:layout_height="30.0dip"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/transparent"
+                        android:textSize="18.0sp"
+                        android:visibility="invisible"
+                        android:layout_below="@+id/just_used_to_locate_01"
+                        android:layout_alignLeft="@+id/barInterest"
+                        android:layout_alignStart="@+id/barInterest" />
+
+
+                    <!--      <com.hebao.app.view.CirclePurseSeekView
+                              android:id="@id/fragment_purse_rate_seek"
+                              android:layout_width="220.0dip"
+                              android:layout_height="fill_parent"
+                              android:layout_above="@id/fragment_purse_ratehint"
+                              android:layout_centerHorizontal="true"
+                              android:layout_marginBottom="14.0dip"
+                              android:layout_marginTop="12.0dip"
+                              android:visibility="visible" />-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/purse_grab_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="230.0dip"
+                    android:background="@color/bar_red"
+                    android:paddingBottom="23.0dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@id/fragment_purse_grab_hint"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/common_white_bg"
+                        android:textSize="14.0dip" />
+
+                    <TextView
+                        android:id="@id/fragment_purse_grab_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="96.0dip"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/common_white_bg"
+                        android:textSize="34.0sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@id/fragment_purse_grab_time_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="69.0dip"
+                        android:text="转入倒计时"
+                        android:textColor="@color/common_white_bg"
+                        android:textSize="13.0sp" />
+
+                    <!--        <com.hebao.app.view.CirclePurseSeekView
+                                android:id="@id/fragment_purse_grab_seek"
+                                android:layout_width="220.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_above="@id/fragment_purse_grab_hint"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="14.0dip"
+                                android:layout_marginTop="12.0dip"
+                                android:visibility="visible" />-->
+                    <!--    <SeekView
+                            android:id="@id/fragment_purse_grab_seek"
+                            android:layout_width="220.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_above="@id/fragment_purse_grab_hint"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="14.0dip"
+                            android:layout_marginTop="12.0dip"
+                            android:visibility="visible" />-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@id/just_used_to_locate_02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="67.0dip"
+                    android:layout_below="@id/just_used_to_locate_01"
+                    android:background="@color/common_white_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@id/fragment_purse_out_layout"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/click_white_gray"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@id/fragment_purse_out_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="转出"
+                            android:textColor="@color/common_orange_m"
+                            android:textSize="20.0dip" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_out_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:includeFontPadding="false"
+                            android:text="随存随取"
+                            android:textColor="@color/text_gray_w_a5"
+                            android:textSize="14.0dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="56.0dip"
+                        android:layout_gravity="center"
+                        android:background="@color/common_gray_dd" />
+
+                    <RelativeLayout
+                        android:id="@id/fragment_purse_in_layout"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/click_white_gray">
+
+                        <LinearLayout
+                            android:id="@id/just_used_to_locate_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@id/fragment_purse_in_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:text="转入"
+                                android:textColor="@color/common_orange_m"
+                                android:textSize="20.0dip" />
+
+                            <TextView
+                                android:id="@id/fragment_purse_in_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2.0dip"
+                                android:includeFontPadding="false"
+                                android:text="1分起投"
+                                android:textColor="@color/text_gray_w_a5"
+                                android:textSize="14.0dip"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@id/fragment_purse_grab_gold"
+                            android:layout_width="32.0dip"
+                            android:layout_height="45.0dip"
+                            android:layout_alignBottom="@id/just_used_to_locate_01"
+                            android:layout_marginBottom="-4.0dip"
+                            android:layout_toLeftOf="@id/just_used_to_locate_01"
+                            android:src="@drawable/animation_gold_beating_imagelist"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@id/just_used_to_locate_03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_below="@id/just_used_to_locate_02"
+                    android:background="@color/common_gray_dd" />
+
+                <LinearLayout
+                    android:id="@id/fragment_purse_income_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/just_used_to_locate_03"
+                    android:background="@color/common_white_bg"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="123.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@id/fragment_purse_income_yesteday_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="23.0dip"
+                            android:includeFontPadding="false"
+                            android:text="预计明日收益(元)"
+                            android:textColor="@color/text_gray_w_a5"
+                            android:textSize="13.0dip" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_income_yesteday_tv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="12.0dip"
+                            android:gravity="center|top"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@color/f95c06_orange_red"
+                            android:textSize="50.0dip"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_noincome_tv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50.0dip"
+                            android:layout_marginLeft="17.0dip"
+                            android:layout_marginRight="17.0dip"
+                            android:layout_marginTop="12.0dip"
+                            android:background="@drawable/border_ffdcce_30px"
+                            android:gravity="center"
+                            android:text="@string/purse_noincome_tip"
+                            android:textColor="@color/f95c06_orange_red"
+                            android:textSize="18.0dip"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_income_yet_tv"
+                            android:layout_width="225.0dip"
+                            android:layout_height="50.0dip"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="17.0dip"
+                            android:layout_marginRight="17.0dip"
+                            android:layout_marginTop="12.0dip"
+                            android:background="@drawable/border_ffdcce_30px"
+                            android:gravity="center"
+                            android:text="收益结算中"
+                            android:textColor="@color/f95c06_orange_red"
+                            android:textSize="18.0dip"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="182.0dip"
+                        android:background="@color/common_gray_f5"
+                        android:padding="17.0dip">
+
+                        <LinearLayout
+                            android:id="@id/just_used_to_locate_10"
+                            android:layout_width="fill_parent"
+                            android:layout_height="91.0dip"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:id="@id/fast_find_id_1"
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0" />
+
+                            <View
+                                android:id="@id/fast_find_id_2"
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="91.0dip"
+                            android:layout_below="@id/just_used_to_locate_10"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:id="@id/fast_find_id_3"
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0" />
+
+                            <View
+                                android:id="@id/fast_find_id_4"
+                                android:layout_width="0.0dip"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@id/just_used_to_locate_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:text="总资产(元)"
+                                android:textColor="@color/text_gray_w_a5"
+                                android:textSize="13.0dip" />
+
+                            <TextView
+                                android:id="@id/creditRepaymentStatusText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="22.0dip"
+                                android:layout_marginLeft="5.0dip"
+                                android:background="@drawable/purse_img_addtion"
+                                android:gravity="center"
+                                android:text="已还款"
+                                android:textColor="@color/text_red_w"
+                                android:textSize="10.0sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@id/fragment_purse_total_asset"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/just_used_to_locate_01"
+                            android:layout_marginTop="12.0dip"
+                            android:layout_toLeftOf="@id/just_used_to_locate_02"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@color/c3e3e3e_white"
+                            android:textSize="25.0dip" />
+
+                        <View
+                            android:id="@id/just_used_to_locate_02"
+                            android:layout_width="1.0px"
+                            android:layout_height="52.0dip"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/common_gray_dd" />
+
+                        <TextView
+                            android:id="@id/just_used_to_locate_03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17.0dip"
+                            android:layout_toRightOf="@id/just_used_to_locate_02"
+                            android:includeFontPadding="false"
+                            android:text="体验金(元)"
+                            android:textColor="@color/text_gray_w_a5"
+                            android:textSize="13.0dip" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_experience"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/just_used_to_locate_03"
+                            android:layout_below="@id/just_used_to_locate_03"
+                            android:layout_marginTop="12.0dip"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@color/c3e3e3e_white"
+                            android:textSize="25.0dip" />
+
+                        <TextView
+                            android:id="@id/just_used_to_locate_04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment_purse_total_asset"
+                            android:layout_marginTop="28.0dip"
+                            android:includeFontPadding="false"
+                            android:text="累计收益(元)"
+                            android:textColor="@color/text_gray_w_a5"
+                            android:textSize="13.0dip" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_total_income"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/just_used_to_locate_04"
+                            android:layout_marginTop="12.0dip"
+                            android:layout_toLeftOf="@id/just_used_to_locate_05"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@color/c3e3e3e_white"
+                            android:textSize="25.0dip" />
+
+                        <View
+                            android:id="@id/just_used_to_locate_05"
+                            android:layout_width="1.0px"
+                            android:layout_height="52.0dip"
+                            android:layout_alignTop="@id/just_used_to_locate_04"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/common_gray_dd" />
+
+                        <TextView
+                            android:id="@id/just_used_to_locate_06"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/just_used_to_locate_05"
+                            android:layout_marginLeft="17.0dip"
+                            android:layout_toRightOf="@id/just_used_to_locate_05"
+                            android:includeFontPadding="false"
+                            android:text="投资天数(天)"
+                            android:textColor="@color/text_gray_w_a5"
+                            android:textSize="13.0dip" />
+
+                        <TextView
+                            android:id="@id/fragment_purse_total_income_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/just_used_to_locate_06"
+                            android:layout_below="@id/just_used_to_locate_06"
+                            android:layout_marginTop="12.0dip"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@color/c3e3e3e_white"
+                            android:textSize="25.0dip" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/middle_special_up_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/common_white_bg"
+                        android:paddingBottom="36.0dip"
+                        android:paddingTop="36.0dip"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@id/fast_find_id_5"
+                                android:layout_width="14.0dip"
+                                android:layout_height="14.0dip"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/touzi_img_uppage" />
+
+                            <TextView
+                                android:id="@id/fast_find_id_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="17.0dip"
+                                android:text="继续拖动，查看安全保障"
+                                android:textColor="@color/text_gray_w_a5"
+                                android:textSize="14.0dip" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@id/pocket_grab_time_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47.0dip"
+                    android:layout_above="@id/just_used_to_locate_02"
+                    android:layout_marginBottom="-7.0dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@id/just_used_to_locate_01"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffe25023"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@id/pocket_grab_time_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40.0dip"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:textColor="@color/common_white_bg"
+                            android:textSize="14.0sp" />
+
+                        <ImageView
+                            android:id="@id/pocket_grab_time_notify_img"
+                            android:layout_width="18.0dip"
+                            android:layout_height="18.0dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20.0dip"
+                            android:layout_toRightOf="@id/pocket_grab_time_text"
+                            android:src="@drawable/purse_img_openring" />
+
+                        <TextView
+                            android:id="@id/pocket_grab_time_notify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="6.0dip"
+                            android:layout_toRightOf="@id/pocket_grab_time_notify_img"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:textColor="@color/text_yellow_ws"
+                            android:textSize="14.0sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/just_used_to_locate_01"
+                        android:orientation="horizontal">
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="7.0dip"
+                            android:layout_weight="1.0" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="7.0dip"
+                            android:layout_weight="1.0"
+                            android:scaleType="center"
+                            android:src="@drawable/purse_img_triangle" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/fragment_purse_none"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white_bg"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:padding="17.0dip">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="142.0dip"
+                    android:background="@drawable/purse_img_aqbz"
+                    android:padding="17.0dip">
+
+                    <ImageView
+                        android:id="@id/just_used_to_locate_01"
+                        android:layout_width="28.0dip"
+                        android:layout_height="28.0dip"
+                        android:src="@drawable/purse_img_billion" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28.0dip"
+                        android:layout_marginLeft="11.0dip"
+                        android:layout_toRightOf="@id/just_used_to_locate_01"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/purse_none_tip1"
+                        android:textColor="@color/common_orange_m"
+                        android:textSize="14.0dip" />
+
+                    <ImageView
+                        android:id="@id/just_used_to_locate_03"
+                        android:layout_width="28.0dip"
+                        android:layout_height="28.0dip"
+                        android:layout_below="@id/just_used_to_locate_01"
+                        android:layout_marginTop="12.0dip"
+                        android:src="@drawable/purse_img_safe" />
+
+                    <TextView
+                        android:id="@id/fragment_purse_bankName_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28.0dip"
+                        android:layout_alignTop="@id/just_used_to_locate_03"
+                        android:layout_marginLeft="11.0dip"
+                        android:layout_toRightOf="@id/just_used_to_locate_03"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/purse_none_tip3"
+                        android:textColor="@color/common_orange_m"
+                        android:textSize="14.0dip" />
+
+                    <ImageView
+                        android:id="@id/just_used_to_locate_04"
+                        android:layout_width="28.0dip"
+                        android:layout_height="28.0dip"
+                        android:layout_below="@id/just_used_to_locate_03"
+                        android:layout_marginTop="12.0dip"
+                        android:src="@drawable/purse_img_lawyer" />
+
+                    <TextView
+                        android:id="@id/fragment_purse_lawFirm_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28.0dip"
+                        android:layout_alignTop="@id/just_used_to_locate_04"
+                        android:layout_marginLeft="11.0dip"
+                        android:layout_toRightOf="@id/just_used_to_locate_04"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/purse_none_tip4"
+                        android:textColor="@color/common_orange_m"
+                        android:textSize="14.0dip" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@id/fragment_purse_none_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23.0dip"
+                    android:includeFontPadding="false"
+                    android:text="投资100.000.00元，30天最多可赚812.05元"
+                    android:textColor="@color/text_gray_w_a5"
+                    android:textSize="14.0dip" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/bar_red" />
+                <lib.view.seekbar.VDHLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/touzi_btn_coin"
+                        android:clickable="true"
+                        android:gravity="center"
+                        />
+
+                </lib.view.seekbar.VDHLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="108.0dip"
+                    android:layout_marginTop="14.0dip"
+                    android:background="@drawable/purse_img_chart"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="68.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="20.0dip"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="29"
+                            android:textColor="#ff718cef"
+                            android:textSize="18.0dip" />
+
+                        <ImageView
+                            android:layout_width="68.0dip"
+                            android:layout_height="39.0dip"
+                            android:layout_marginTop="4.0dip"
+                            android:src="@drawable/purse_img_triangle1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <LinearLayout
+                        android:layout_width="68.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="358"
+                            android:textColor="#ffff8a0e"
+                            android:textSize="18.0dip" />
+
+                        <ImageView
+                            android:layout_width="68.0dip"
+                            android:layout_height="68.0dip"
+                            android:layout_marginTop="4.0dip"
+                            android:src="@drawable/purse_img_triangle2" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <LinearLayout
+                        android:layout_width="68.0dip"
+                        android:layout_height="108.0dip"
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="20.0dip"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@id/pocket_max_amount_for_none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="894"
+                            android:textColor="@color/text_red_w"
+                            android:textSize="18.0dip" />
+
+                        <ImageView
+                            android:layout_width="68.0dip"
+                            android:layout_height="86.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:src="@drawable/purse_img_triangle3" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20.0dip"
+                    android:paddingRight="20.0dip">
+
+                    <TextView
+                        android:layout_width="68.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="银行"
+                        android:textColor="#ff718cef"
+                        android:textSize="12.0dip" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:layout_width="68.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="宝宝类"
+                        android:textColor="#ffff8a0e"
+                        android:textSize="12.0dip" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="1.0dip"
+                        android:layout_weight="1.0" />
+
+                    <TextView
+                        android:layout_width="68.0dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="零钱包"
+                        android:textColor="@color/text_red_w"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@id/text_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textSize="55.0dip"
+        android:visibility="invisible" />
+
+</RelativeLayout>

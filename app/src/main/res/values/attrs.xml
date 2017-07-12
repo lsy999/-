@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomBehavior">
+        <attr name="finalHeight" format="dimension"/>
+    </declare-styleable>
+    <!--自定义的imageview属性 可以设置成圆角-->
+    <declare-styleable name="ShapeImageView">
+        <attr name="siv_shape" format="enum">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+            <enum name="oval" value="3" />
+        </attr>
+        <attr name="siv_round_radius" format="dimension" />
+        <attr name="siv_border_size" format="dimension" />
+        <attr name="siv_border_color" format="color" />
+    </declare-styleable>
+
+
+    <!--倒计时控件使用的-->
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixGravity">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+    </declare-styleable>
+
+    <!--自定义活期零钱包的利率进度条-->
+    <declare-styleable name="ColorArcProgressBar">
+        <attr name="back_color" format="color"/>
+        <attr name="front_color1" format="color"/>
+        <attr name="front_color2" format="color"/>
+        <attr name="front_color3" format="color"/>
+        <attr name="back_width" format="dimension"/>
+        <attr name="front_width" format="dimension"/>
+        <attr name="is_need_title" format="boolean"/>
+        <attr name="is_need_content" format="boolean"/>
+        <attr name="is_need_unit" format="boolean"/>
+        <attr name="is_need_dial" format="boolean"/>
+        <attr name="string_title" format="string"/>
+        <attr name="string_unit" format="string"/>
+        <attr name="total_engle" format="integer"/>
+        <attr name="current_value" format="float"/>
+        <attr name="max_value" format="float"/>
+    </declare-styleable>
+
+    <!--零钱包买入界面类似支付宝底部弹出的买入-->
+    <declare-styleable name="inputBox">
+        <attr name="passwordCount" format="integer"/>
+        <attr name="stokeColor" format="color"/>
+        <attr name="symbolColor" format="color"/>
+        <attr name="symbolRadius" format="dimension"/>
+        <attr name="inputBoxStroke" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="materialStatusProgressAttr">
+        <attr name="arcColor" format="reference|color"/>
+        <attr name="progressBarBorderWidth" format="dimension"/>
+    </declare-styleable>
+</resources>
