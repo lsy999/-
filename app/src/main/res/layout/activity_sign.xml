@@ -13,10 +13,12 @@
     <LinearLayout
         android:id="@id/layout_registerFlowing"
         android:layout_width="fill_parent"
-        android:layout_below="@id/flowProgress_layout"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="visible"
+        android:layout_below="@+id/flowProgress_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:id="@id/text_registerTip"

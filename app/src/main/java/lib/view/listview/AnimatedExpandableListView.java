@@ -1,20 +1,7 @@
-/*
- * Copyright (C) 2014 Gary Guo
- * 
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *     http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
- 
 package lib.view.listview;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -33,13 +20,17 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
-import java.util.ArrayList;
-import java.util.List;
-
+/**
+ * This class defines an ExpandableListView which supports animations for
+ * collapsing and expanding groups.
+ */
 public class AnimatedExpandableListView extends ExpandableListView {
 
-	private static final String TAG = AnimatedExpandableListAdapter.class.getSimpleName();
+    private static final String TAG = AnimatedExpandableListAdapter.class.getSimpleName();
 
+    /**
+     * The duration of the expand/collapse animations
+     */
     private static final int ANIMATION_DURATION = 300;
 
     private AnimatedExpandableListAdapter adapter;
@@ -79,11 +70,11 @@ public class AnimatedExpandableListView extends ExpandableListView {
      */
     @SuppressLint("NewApi")
     public boolean expandGroupWithAnimation(int groupPos) {
-    	boolean lastGroup = groupPos == adapter.getGroupCount() - 1;
-    	if (lastGroup && Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-    		return expandGroup(groupPos, true);
-    	}
-    	
+        boolean lastGroup = groupPos == adapter.getGroupCount() - 1;
+        if (lastGroup && Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+            return expandGroup(groupPos, true);
+        }
+
         int groupFlatPos = getFlatListPosition(getPackedPositionForGroup(groupPos));
         if (groupFlatPos != -1) {
             int childIndex = groupFlatPos - getFirstVisiblePosition();
@@ -266,10 +257,10 @@ public class AnimatedExpandableListView extends ExpandableListView {
             // Return 1 more than the childTypeCount to account for DummyView
             return getRealChildTypeCount() + 1;
         }
-        
+
         protected ViewGroup.LayoutParams generateDefaultLayoutParams() {
             return new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                                                ViewGroup.LayoutParams.WRAP_CONTENT, 0);
+                    ViewGroup.LayoutParams.WRAP_CONTENT, 0);
         }
 
         /**
@@ -336,25 +327,25 @@ public class AnimatedExpandableListView extends ExpandableListView {
                         p = (AbsListView.LayoutParams) generateDefaultLayoutParams();
                         childView.setLayoutParams(p);
                     }
-                    
+
                     int lpHeight = p.height;
-                    
+
                     int childHeightSpec;
                     if (lpHeight > 0) {
                         childHeightSpec = MeasureSpec.makeMeasureSpec(lpHeight, MeasureSpec.EXACTLY);
                     } else {
                         childHeightSpec = measureSpecH;
                     }
-                    
+
                     childView.measure(measureSpecW, childHeightSpec);
                     totalHeight += childView.getMeasuredHeight();
-                    
+
                     if (totalHeight < clipHeight) {
                         // we only need to draw enough views to fool the user...
                         dummyView.addFakeView(childView);
                     } else {
                         dummyView.addFakeView(childView);
-                        
+
                         // if this group has too many views, we don't want to
                         // calculate the height of everything... just do a light
                         // approximation and break
@@ -446,13 +437,13 @@ public class AnimatedExpandableListView extends ExpandableListView {
         }
 
         public void setDivider(Drawable divider, int dividerWidth, int dividerHeight) {
-	        if(divider != null) {
-		        this.divider = divider;
-		        this.dividerWidth = dividerWidth;
-		        this.dividerHeight = dividerHeight;
+            if(divider != null) {
+                this.divider = divider;
+                this.dividerWidth = dividerWidth;
+                this.dividerHeight = dividerHeight;
 
-		        divider.setBounds(0, 0, dividerWidth, dividerHeight);
-	        }
+                divider.setBounds(0, 0, dividerWidth, dividerHeight);
+            }
         }
 
         /**
@@ -463,7 +454,7 @@ public class AnimatedExpandableListView extends ExpandableListView {
             childView.layout(0, 0, getWidth(), childView.getMeasuredHeight());
             views.add(childView);
         }
-        
+
         @Override
         protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
             super.onLayout(changed, left, top, right, bottom);
@@ -477,31 +468,30 @@ public class AnimatedExpandableListView extends ExpandableListView {
         public void clearViews() {
             views.clear();
         }
-
         @Override
         public void dispatchDraw(Canvas canvas) {
             canvas.save();
             if(divider != null) {
                 divider.setBounds(0, 0, dividerWidth, dividerHeight);
             }
-            
+
             final int len = views.size();
             for(int i = 0; i < len; i++) {
                 View v = views.get(i);
-                
+
                 canvas.save();
                 canvas.clipRect(0, 0, getWidth(), v.getMeasuredHeight());
                 v.draw(canvas);
                 canvas.restore();
-                
+
                 if(divider != null) {
                     divider.draw(canvas);
                     canvas.translate(0, dividerHeight);
                 }
-                
+
                 canvas.translate(0, v.getMeasuredHeight());
             }
-            
+
             canvas.restore();
         }
     }

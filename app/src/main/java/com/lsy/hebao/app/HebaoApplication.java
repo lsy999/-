@@ -18,6 +18,7 @@ public class HebaoApplication extends Application {
     public static Context context = null;
     private static HebaoApplication application;
 
+
     /**
      * 获取Application 运行实例
      * @return

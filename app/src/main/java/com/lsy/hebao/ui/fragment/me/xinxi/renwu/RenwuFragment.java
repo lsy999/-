@@ -26,10 +26,11 @@ import lib.view.listview.AnimatedExpandableListView;
  * Created by lsy on 2017/4/24.
  */
 
-public class RenwuFragment extends BaseFragment{
+public class RenwuFragment extends BaseFragment {
 
     private AnimatedExpandableListView listView;
     private ExampleAdapter adapter;
+
     public static RenwuFragment newInstance() {
 
         Bundle args = new Bundle();
@@ -50,17 +51,15 @@ public class RenwuFragment extends BaseFragment{
     private void initView(View view) {
         List<GroupItem> items = new ArrayList<GroupItem>();
 
-        for(int i = 1; i < 10; i++) {
+        for (int i = 1; i < 10; i++) {
             GroupItem item = new GroupItem();
 
             item.title = "新用户成功绑卡 " + i;
 
-            for(int j = 0; j < i; j++) {
                 ChildItem child = new ChildItem();
-                child.title = "成长值+1 体验金+1000 " + j;
+                child.title = "成长值+1 体验金+1000 "+i;
 
                 item.items.add(child);
-            }
 
             items.add(item);
         }
@@ -68,7 +67,8 @@ public class RenwuFragment extends BaseFragment{
         adapter = new ExampleAdapter(getActivity());
         adapter.setData(items);
 
-        listView = (AnimatedExpandableListView)view.findViewById(R.id.listView);
+        listView = (AnimatedExpandableListView) view.findViewById(R.id.listView);
+        listView.setGroupIndicator(null);
         listView.setAdapter(adapter);
 
         listView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
@@ -82,9 +82,9 @@ public class RenwuFragment extends BaseFragment{
                 }
                 return true;
             }
-
         });
     }
+
 
     private static class GroupItem {
         String title;
@@ -196,7 +196,6 @@ public class RenwuFragment extends BaseFragment{
         }
 
     }
-
-
-
 }
+
+

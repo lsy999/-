@@ -38,6 +38,7 @@ import lib.pullable.PullToRefreshLayout;
  */
 
 public class HomeFragment extends BaseMainFragment{
+
     private LinearLayout home_charts_big,home_keyong,home_lingqianbao,home_zongzichan,home_tiyanjin,home_invest;
     private PullToRefreshLayout prl_home;
 
@@ -46,7 +47,6 @@ public class HomeFragment extends BaseMainFragment{
     int[] weather = {9,7,6,7,8,6,8};//图表的数据
     private List<PointValue> mPointValues = new ArrayList<PointValue>();
     private List<AxisValue> mAxisValues = new ArrayList<AxisValue>();
-
     public static HomeFragment newInstance() {
 
         Bundle args = new Bundle();
@@ -62,8 +62,6 @@ public class HomeFragment extends BaseMainFragment{
         View view=inflater.inflate(R.layout.fragment_home_liao,container,false);
         initView(view);
         initDate();
-     /*   prl_home= (PullToRefreshLayout) view.findViewById(R.id.prl_home);
-        prl_home.setOnRefreshListener(new MyPullListener());*/
         return view;
     }
 
