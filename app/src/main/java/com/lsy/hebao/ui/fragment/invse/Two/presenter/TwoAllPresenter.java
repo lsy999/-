@@ -14,7 +14,6 @@ public class TwoAllPresenter extends BasePresenter<ITwoView> {
     }
 
     public void loadDataByRetrofitRxjava() {
-        mvpView.showLoading();
         addSubscription(apiStores.loadDataTwo(),
                 new ApiCallback<TwoAll>() {
                     @Override
@@ -29,7 +28,6 @@ public class TwoAllPresenter extends BasePresenter<ITwoView> {
 
                     @Override
                     public void onFinish() {
-                        mvpView.hideLoading();
                     }
 
                 });

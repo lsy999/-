@@ -6,12 +6,6 @@ import com.wuxiaolong.androidutils.library.LogUtil;
 import retrofit2.adapter.rxjava.HttpException;
 import rx.Subscriber;
 
-/**
- * Created by WuXiaolong on 2016/9/22.
- * github:https://github.com/WuXiaolong/
- * 微信公众号：吴小龙同学
- * 个人博客：http://wuxiaolong.me/
- */
 public abstract class ApiCallback<M> extends Subscriber<M> {
 
     public abstract void onSuccess(M model);

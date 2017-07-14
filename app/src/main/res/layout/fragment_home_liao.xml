@@ -38,13 +38,13 @@
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:id="@+id/main.textview.title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="left"
-                        android:background="@drawable/tab_btn_eyes" />
+                    <!--<ImageView-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:id="@+id/main.textview.title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:gravity="left"-->
+                        <!--android:background="@drawable/tab_btn_eyes" />-->
 
                 </LinearLayout>
                 </android.support.v7.widget.Toolbar>

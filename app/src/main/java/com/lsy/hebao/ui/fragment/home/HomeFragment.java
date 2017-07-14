@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 
 import com.lsy.hebao.R;
 import com.lsy.hebao.base.BaseMainFragment;
+import com.lsy.hebao.ui.actvity.login.LoginActivity;
 import com.lsy.hebao.ui.fragment.home.charts.HomeChartsActivity;
 import com.lsy.hebao.ui.fragment.home.keyong.HomeKeyongActivity;
 import com.lsy.hebao.ui.fragment.home.myinvse.HomeMyinvseActivity;
@@ -21,6 +22,7 @@ import com.lsy.hebao.ui.fragment.home.zongzichan.HomeZongzichanActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import lecho.lib.hellocharts.gesture.ContainerScrollType;
 import lecho.lib.hellocharts.gesture.ZoomType;
 import lecho.lib.hellocharts.model.Axis;
@@ -41,7 +43,7 @@ public class HomeFragment extends BaseMainFragment{
 
     private LinearLayout home_charts_big,home_keyong,home_lingqianbao,home_zongzichan,home_tiyanjin,home_invest;
     private PullToRefreshLayout prl_home;
-
+    CircleImageView cl_home_xtx;
     private LineChartView lineChart;
     String[] weeks = {"11","12","13","14","15","16","17"};//X轴的标注
     int[] weather = {9,7,6,7,8,6,8};//图表的数据
@@ -66,6 +68,13 @@ public class HomeFragment extends BaseMainFragment{
     }
 
     private void initView(View view) {
+        cl_home_xtx= (CircleImageView) view.findViewById(R.id.cl_home_xtx);
+        cl_home_xtx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadData();
+            }
+        });
         home_charts_big= (LinearLayout) view.findViewById(R.id.ll_home_charts_big);//趋势图
         home_zongzichan= (LinearLayout) view.findViewById(R.id.ll_home_zongzichan);//总资产
         home_lingqianbao= (LinearLayout) view.findViewById(R.id.ll_home_lingqianbao);//零钱包
@@ -79,6 +88,12 @@ public class HomeFragment extends BaseMainFragment{
         initLineChart();
 
     }
+
+    private void loadData() {
+        Intent inter =new Intent(getActivity(),LoginActivity.class);
+        getActivity().startActivity(inter);
+    }
+
     /**
      * 初始化LineChart的一些设置
      */

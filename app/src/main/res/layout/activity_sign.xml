@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
-
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"/>
     <RelativeLayout
+        android:layout_below="@+id/tool_bar"
         android:id="@id/flowProgress_layout"
-        android:layout_width="276.0dip"
-        android:layout_height="38.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="6.0dip">
+        <ImageView
+            android:id="@+id/iv_zc"
+            android:layout_width="match_parent"
+            android:layout_height="180.00dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
     <LinearLayout
@@ -19,18 +32,6 @@
         android:layout_below="@+id/flowProgress_layout"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-
-        <TextView
-            android:id="@id/text_registerTip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16.0dip"
-            android:layout_marginTop="61.0dip"
-            android:includeFontPadding="false"
-            android:singleLine="true"
-            android:text="手机号码将成为你的账号"
-            android:textColor="@color/text_black_ws"
-            android:textSize="20.0dip" />
 
         <LinearLayout
             android:id="@id/regMove_layout"
@@ -47,13 +48,76 @@
                 android:layout_marginRight="16.0dip">
 
                 <EditText
-                    android:id="@id/edit_registerAccount"
+                    android:id="@+id/et_phone"
                     android:layout_width="fill_parent"
                     android:layout_height="50.0dip"
                     android:drawableLeft="@drawable/common_img_mobile_down"
                     android:drawablePadding="11.0dip"
-                    android:hint="账号"
+                    android:hint="13122222229"
                     android:inputType="numberSigned"
+                    android:textColor="@color/text_black_w"
+                    android:textColorHint="@color/text_gray_w_d"
+                    android:textSize="16.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <View
+                    android:id="@id/fast_find_id_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/common_gray_dd" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_editLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip">
+               <TextView
+                   android:id="@+id/tv_yzm"
+                  android:background="@color/btn_yellow_press"
+                   android:textSize="16.0dip"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="100.0dp"
+                   android:layout_height="50.0dip" />
+                <EditText
+                    android:id="@+id/et_yzm"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="100dip"
+                    android:layout_height="50.0dip"
+                    android:drawableLeft="@drawable/common_img_mobile_down"
+                    android:drawablePadding="11.0dip"
+                    android:hint="376254"
+                    android:inputType="numberSigned"
+                    android:textColor="@color/text_black_w"
+                    android:textColorHint="@color/text_gray_w_d"
+                    android:textSize="16.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <View
+                    android:id="@id/fast_find_id_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/common_gray_dd" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_editLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:drawableLeft="@drawable/common_img_mobile_down"
+                    android:drawablePadding="11.0dip"
+                    android:hint="lsy"
                     android:textColor="@color/text_black_w"
                     android:textColorHint="@color/text_gray_w_d"
                     android:textSize="16.0dip"
@@ -70,16 +134,45 @@
                     android:layout_alignParentBottom="true"
                     android:background="@color/common_gray_dd" />
             </RelativeLayout>
+            <RelativeLayout
+                android:id="@id/rl_editLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip">
 
+                <EditText
+                    android:id="@+id/et_mima"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:drawableLeft="@drawable/common_img_mobile_down"
+                    android:drawablePadding="11.0dip"
+                    android:hint="123456aba"
+                    android:textColor="@color/text_black_w"
+                    android:textColorHint="@color/text_gray_w_d"
+                    android:textSize="16.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+
+                <View
+                    android:id="@id/fast_find_id_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/common_gray_dd" />
+            </RelativeLayout>
             <Button
-                android:id="@id/circle_btnRegNext"
+                android:id="@+id/bt_zc"
                 android:layout_width="fill_parent"
                 android:layout_height="50.0dip"
                 android:layout_marginLeft="12.0dip"
                 android:layout_marginRight="12.0dip"
                 android:layout_marginTop="34.0dip"
                 android:gravity="center"
-                android:text="下一步"
+                android:text="注 册"
                 android:background="@drawable/btn_yellow_bgc_selector"
                 android:textColor="@color/text_white_w"
                 android:textSize="18.0dip" />
@@ -114,26 +207,5 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </RelativeLayout>
+</ScrollView>

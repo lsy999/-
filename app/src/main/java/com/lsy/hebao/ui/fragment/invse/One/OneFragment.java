@@ -104,14 +104,5 @@ public class OneFragment extends MvpFragment<OnePresenter> implements IOneView {
     }
 
 
-    @Override
-    public void showLoading() {
-
-    }
-
-    @Override
-    public void hideLoading() {
-
-    }
 
 }

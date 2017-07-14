@@ -17,7 +17,6 @@ public class OnePresenter extends BasePresenter<IOneView> {
     }
 
     public void loadDataByRetrofitRxjava() {
-        mvpView.showLoading();
         addSubscription(apiStores.loadDataOne(),
                 new ApiCallback<OneAll>() {
                     @Override
@@ -33,7 +32,7 @@ public class OnePresenter extends BasePresenter<IOneView> {
 
                     @Override
                     public void onFinish() {
-                        mvpView.hideLoading();
+
                     }
 
                 });

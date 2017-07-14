@@ -89,15 +89,5 @@ public class TwoFragment extends MvpFragment<TwoAllPresenter> implements ITwoVie
         adapter.notifyDataSetChanged();
     }
 
-    @Override
-    public void showLoading() {
-
-
-    }
-
-    @Override
-    public void hideLoading() {
-
-    }
 
 }
